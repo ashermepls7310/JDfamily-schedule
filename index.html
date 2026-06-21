@@ -172,7 +172,7 @@
                 title: "JoongFSLUCKYwithJOONG", 
                 location: "-", 
                 type: "Ticketed", 
-                artists: ["ดัง"], 
+                artists: ["จุง"], 
                 note: "",
                 image: "images/1207Joong.jpg"
             },
@@ -182,7 +182,7 @@
                 time: "-", 
                 title: "JIB Dream Fanmeet 7", 
                 location: "Hilton Rome Airport Hotel , Italy", 
-                type: "Closed", 
+                type: "Ticketed", 
                 artists: ["จุง", "ดัง"], 
                 note: "#JoongDunk2ndFMinRome",
                 image: "images/2930FM.jpg"
@@ -191,9 +191,9 @@
                 id: 5, 
                 date: "11 ต.ค. 2026", 
                 time: "14.00 น.", 
-                title: "Only You With JOONG X DUNK", 
+                title: "JOONG Solo Fan Meeting in Kuala Lumpur", 
                 location: "JioSpace, Malaysia", 
-                type: "Closed", 
+                type: "Ticketed", 
                 artists: ["จุง"], 
                 note: "",
                 image: "images/11Joong.jpg"
@@ -219,7 +219,7 @@
         const getTypeBadge = (type) => {
             if(type === 'Open') return `<span class="bg-green-500/20 text-green-500 border border-green-500/50 px-2.5 py-1 rounded-md text-xs font-semibold flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> งานเปิด</span>`;
             if(type === 'Closed') return `<span class="bg-orange-500/20 text-orange-500 border border-orange-500/50 px-2.5 py-1 rounded-md text-xs font-semibold flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span> งานปิด</span>`;
-            //if(type === 'Ticketed') return `<span class="bg-blue-500/20 text-blue-400 border border-blue-500/50 px-2.5 py-1 rounded-md text-xs font-semibold flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> งานกดบัตร</span>`;
+            if(type === 'Ticketed') return `<span class="bg-blue-500/20 text-blue-400 border border-blue-500/50 px-2.5 py-1 rounded-md text-xs font-semibold flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> งานกดบัตร</span>`;
             return '';
         };
 
